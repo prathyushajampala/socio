@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Webpage</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        section {
+            display: flex;
+            margin: 20px;
+        }
+
+        aside {
+            width: 20%;
+            background-color: #ddd;
+            padding: 10px;
+        }
+
+        .people-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .person {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .feed-section {
+            width: 60%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .image {
+            width: 48%;
+            margin-bottom: 20px;
+        }
+
+        .image img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .image img:hover {
+            transform: scale(1.1);
+        }
+
+        .interaction-buttons {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .video-section {
+            width: 40%;
+            margin-left: 20px;
+        }
+
+        .video-section iframe {
+            width: 100%;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Social Media Webpage</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Friends</a>
+        <a href="#">Feed</a>
+        <a href="#">Log Out</a>
+    </nav>
+
+    <section>
+        <aside>
+            <ul class="people-list">
+                <li class="person">
+                    Person 1
+                    <div>
+                        <button>Send</button>
+                        <button>Accept</button>
+                    </div>
+                </li>
+                <li class="person">
+                    Person 3
+                    <div>
+                        <button>Send</button>
+                        <button>Accept</button>
+                    </div>
+                </li>
+                <li class="person">
+                    Person 4
+                    <div>
+                        <button>Send</button>
+                        <button>Accept</button>
+                    </div>
+                </li>
+                <li class="person">
+                    Person 5
+                    <div>
+                        <button>Send</button>
+                        <button>Accept</button>
+                    </div>
+                </li>
+                <li class="person">
+                    Person 6
+                    <div>
+                        <button>Send</button>
+                        <button>Accept</button>
+                    </div>
+                </li>
+                <li class="person">
+                    Person 7
+                    <div>
+                        <button>Send</button>
+                        <button>Accept</button>
+                    </div>
+                </li>
+                <li class="person">
+                    Person 8
+                    <div>
+                        <button>Send</button>
+                        <button>Accept</button>
+                    </div>
+                </li>
+                <li class="person">
+                    Person 9
+                    <div>
+                        <button>Send</button>
+                        <button>Accept</button>
+                    </div>
+                </li>
+                <li class="person">
+                    Person 10
+                    <div>
+                        <button>Send</button>
+                        <button>Accept</button>
+                    </div>
+                </li>
+            </ul>
+        </aside>
+
+        <div class="feed-section">
+            <div class="image">
+                <img src="image1.jpg" alt="Image 1">
+                <p>Description for Image 1</p>
+                <div class="interaction-buttons">
+                    <button onclick="like()">Like</button>
+                    <button onclick="dislike()">Dislike</button>
+                </div>
+            </div>
+
+            <div class="image">
+                <img src="image2.jpg" alt="Image 2">
+                <p>Description for Image 2</p>
+                <div class="interaction-buttons">
+                    <button onclick="like()">Like</button>
+                    <button onclick="dislike()">Dislike</button>
+                </div>
+            </div>
+            <div class="image">
+                <img src="image2.jpg" alt="Image 3">
+                <p>Description for Image 3</p>
+                <div class="interaction-buttons">
+                    <button onclick="like()">Like</button>
+                    <button onclick="dislike()">Dislike</button>
+                </div>
+            </div>
+            <div class="image">
+                <img src="image3.jpg" alt="Image 4">
+                <p>Description for Image 4</p>
+                <div class="interaction-buttons">
+                    <button onclick="like()">Like</button>
+                    <button onclick="dislike()">Dislike</button>
+                </div>
+            </div>
+            <div class="image">
+                <img src="image4.jpg" alt="Image 5">
+                <p>Description for Image 5</p>
+                <div class="interaction-buttons">
+                    <button onclick="like()">Like</button>
+                    <button onclick="dislike()">Dislike</button>
+                </div>
+            </div>
+            <div class="image">
+                <img src="image5.jpg" alt="Image 6">
+                <p>Description for Image 6</p>
+                <div class="interaction-buttons">
+                    <button onclick="like()">Like</button>
+                    <button onclick="dislike()">Dislike</button>
+                </div>
+            </div>
+            <div class="image">
+                <img src="image5.jpg" alt="Image 7">
+                <p>Description for Image 6</p>
+                <div class="interaction-buttons">
+                    <button onclick="like()">Like</button>
+                    <button onclick="dislike()">Dislike</button>
+                </div>
+            </div>
+            <div class="image">
+                <img src="image5.jpg" alt="Image 8">
+                <p>Description for Image 6</p>
+                <div class="interaction-buttons">
+                    <button onclick="like()">Like</button>
+                    <button onclick="dislike()">Dislike</button>
+                </div>
+            </div>
+
+            <!-- Add more images as needed -->
+        </div>
+
+        <div class="video-section">
+            <h2>Featured Video</h2>
+            <!-- Add your video URL -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Social Media Webpage. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function like() {
+            // Add logic for handling like action
+            console.log("Liked!");
+        }
+
+        function dislike() {
+            // Add logic for handling dislike action
+            console.log("Disliked!");
+        }
+    </script>
+
+</body>
+</html>
